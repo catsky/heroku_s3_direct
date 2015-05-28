@@ -20,6 +20,7 @@ class User < ActiveRecord::Base
   do_not_validate_attachment_file_type :attachment
   def attachment_from_url(url)
     self.attachment = open(url)
+    self.attachment_file_name = File.basename(url)
   end
   
 end

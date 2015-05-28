@@ -12,7 +12,6 @@ create a enviroment file called `.env` in project root folder, and input your aw
   AWS_ACCESS_KEY_ID=xxx
   AWS_SECRET_ACCESS_KEY=xxxx
   S3_REGION=xxx
-  
 ```
 
 then run the following command to start. Enjoy!

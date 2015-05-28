@@ -7,7 +7,7 @@ Here is a one-stop-shop code for all if you are using Jquery File Upload and sav
 ## Usage
 create a enviroment file called `.env` in project root folder, and input your aws key stuff
 
-```
+```ruby
   S3_BUCKET=xxx  
   AWS_ACCESS_KEY_ID=xxx
   AWS_SECRET_ACCESS_KEY=xxxx
@@ -16,7 +16,8 @@ create a enviroment file called `.env` in project root folder, and input your aw
 ```
 
 then run the following command to start. Enjoy!
-```
+
+```ruby
 foreman run rails s
 ```
 

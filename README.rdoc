@@ -1,28 +1,23 @@
-== README
+# S3 + Jquery File Upload plugin + Paperclip  => fit for Heroku large file upload
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Heroku has 30s limitation when you upload large file, it's annoying, isnt it?
+Here is a one-stop-shop code for all if you are using Jquery File Upload and save files to Amazon S3, and also using Paperclip to process the image. Yeah, this solution is what you are looking for.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+## Usage
+create a enviroment file called `.env` in project root folder, and input your aws key stuff
+
+```
+  S3_BUCKET=xxx  
+  AWS_ACCESS_KEY_ID=xxx
+  AWS_SECRET_ACCESS_KEY=xxxx
+  S3_REGION=xxx
+  
+```
+
+then run the following command to start. Enjoy!
+```
+foreman run rails s
+```
+
+Thank YOU :)
